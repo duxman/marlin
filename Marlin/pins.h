@@ -460,7 +460,7 @@
 #endif
 
 #ifndef SD_DETECT_PIN
-  #define SD_DETECT_PIN -1
+  #define SD_DETECT_PIN 53
 #endif
 #ifndef SDPOWER
   #define SDPOWER -1

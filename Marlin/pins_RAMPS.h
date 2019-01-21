@@ -19,9 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-
-/**
- * Arduino Mega with RAMPS v1.4 (or v1.3) pin assignments
+/* Arduino Mega with RAMPS v1.4 (or v1.3) pin assignments
  *
  * Applies to the following boards:
  *
@@ -424,7 +422,7 @@
       #endif
 
       #define BTN_ENC           35
-      #define SD_DETECT_PIN     49
+      #define SD_DETECT_PIN     53
       #define KILL_PIN          41
 
       #if ENABLED(BQ_LCD_SMART_CONTROLLER)
@@ -453,7 +451,7 @@
       #define BTN_ENC           -1
 
       #define LCD_SDSS          SDSS
-      #define SD_DETECT_PIN     49
+      #define SD_DETECT_PIN     53
 
     #elif ENABLED(VIKI2) || ENABLED(miniVIKI)
 
@@ -485,7 +483,7 @@
       #define BTN_ENC           31
 
       #define LCD_SDSS          SDSS
-      #define SD_DETECT_PIN     49
+      #define SD_DETECT_PIN     53
       #define KILL_PIN          41
 
     #elif ENABLED(MKS_MINI_12864)   // Added in Marlin 1.1.6
@@ -508,7 +506,7 @@
       #define BTN_EN2           33
       #define BTN_ENC           35
 
-      #define SD_DETECT_PIN     49
+      #define SD_DETECT_PIN     53
       #define KILL_PIN          64
 
     #elif ENABLED(MINIPANEL)
@@ -554,7 +552,7 @@
       #elif ENABLED(PANEL_ONE)
         #define BTN_EN1         59   // AUX2 PIN 3
         #define BTN_EN2         63   // AUX2 PIN 4
-        #define BTN_ENC         49   // AUX3 PIN 7
+        #define BTN_ENC         53   // AUX3 PIN 7
       #else
         #define BTN_EN1         37
         #define BTN_EN2         35
@@ -562,7 +560,7 @@
       #endif
 
       #if ENABLED(G3D_PANEL)
-        #define SD_DETECT_PIN   49
+        #define SD_DETECT_PIN   53
         #define KILL_PIN        41
       #endif
 

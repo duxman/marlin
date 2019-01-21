@@ -53,6 +53,10 @@
 
 #include "pins_RAMPS.h"
 
+#undef SD_DETECT_PIN
+//#define SD_DETECT_PIN   49 by default dont run
+#define SD_DETECT_PIN   -1 // with -1 appear init sd menu
+
 //
 // LCD / Controller
 //
@@ -101,7 +105,8 @@
   //
 
   // orange/white         SDCD
-  #define SD_DETECT_PIN   49
+  //#define SD_DETECT_PIN   49 by default dont run
+  #define SD_DETECT_PIN   53
 
   // white                ENCA
   #define BTN_EN1         35
