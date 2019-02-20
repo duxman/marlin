@@ -56,7 +56,7 @@
 #undef SD_DETECT_PIN
 //#define SD_DETECT_PIN   49 by default dont run
 #define SD_DETECT_PIN   -1 // with -1 appear init sd menu
-
+#define SERVO0_PIN       11
 //
 // LCD / Controller
 //
