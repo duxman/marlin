@@ -34,6 +34,7 @@
 #endif
 
 #define BOARD_NAME "MKS GEN >= v1.3"
+#define IS_RAMPS_EFB
 
 //
 // Heaters / Fans
@@ -53,10 +54,6 @@
 
 #include "pins_RAMPS.h"
 
-#undef SD_DETECT_PIN
-//#define SD_DETECT_PIN   49 by default dont run
-#define SD_DETECT_PIN   -1 // with -1 appear init sd menu
-#define SERVO0_PIN       11
 //
 // LCD / Controller
 //
@@ -105,8 +102,7 @@
   //
 
   // orange/white         SDCD
-  //#define SD_DETECT_PIN   49 by default dont run
-  #define SD_DETECT_PIN   53
+  #define SD_DETECT_PIN   49
 
   // white                ENCA
   #define BTN_EN1         35
