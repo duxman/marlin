@@ -1839,6 +1839,10 @@
 // If all hotends, bed temperature, and target temperature are under 54C
 // then the BLUE led is on. Otherwise the RED led is on. (1C hysteresis)
 #define TEMP_STAT_LEDS
+#if ENABLED(TEMP_STAT_LEDS)
+  #define STAT_LED_RED_PIN 4
+  #define STAT_LED_BLUE_PIN 6
+#endif
 
 // M240  Triggers a camera by emulating a Canon RC-1 Remote
 // Data from: http://www.doc-diy.net/photo/rc-1_hacked/
